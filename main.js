@@ -8,7 +8,7 @@ let arrayProductos = [
 //comprarPrendas();
 descartarProductoDelCarrito([1,3,2], arrayProductos);
 
-function descartarProductoDelCarrito(arrayIds, miArray){
+function descartarProductosDelCarrito(arrayIds, miArray){
     let arrayNuevo = miArray;
     //let arrayExtra = [];
     for(let i=0; i<arrayIds.length; i++ ){
@@ -19,6 +19,11 @@ function descartarProductoDelCarrito(arrayIds, miArray){
     }
     console.log(miArray);
     //return miArray;
+}
+
+function descartarUnProductoDelCarrito(id, miArray){
+    let arrayNuevo = miArray.filter(x=>x.id !== id);
+    alert('Se eliminó el producto de id ' + id);
 }
 
 function comprarPrendas(){
