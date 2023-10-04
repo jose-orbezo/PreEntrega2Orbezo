@@ -6,7 +6,7 @@ let arrayProductos = [
 ];
 
 //comprarPrendas();
-descartarProductoDelCarrito([1,3,2], arrayProductos);
+descartarProductosDelCarrito([1,3,2], arrayProductos);
 
 function descartarProductosDelCarrito(arrayIds, miArray){
     let arrayNuevo = miArray;
